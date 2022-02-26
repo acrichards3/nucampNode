@@ -1,4 +1,4 @@
-import rect from './rectangle.mjs';
+const rect = require('./rectangle');
 
 function solveRect(l, w) {
   console.log(`Solving for rectangle with dimensions: ${l}, ${w}`);
@@ -8,14 +8,14 @@ function solveRect(l, w) {
       console.log('ERROR:', err.message);
     } else {
       console.log(
-        `Area of rectangle with dimensions: ${l}, ${w} is: ${rectangle.area()}`
+        `Area of rectangle with dimensions ${l}, ${w} is: ${rectangle.area()}`
       );
       console.log(
-        `Perimeter of rectangle with dimensions: ${l}, ${w} is: ${rectangle.perimeter()}`
+        `Perimeter of rectangle with dimensions ${l}, ${w} is: ${rectangle.perimeter()}`
       );
     }
   });
-  console.log('This statement os logged after the call to rect()');
+  console.log('This statement is logged after the call to rect()');
 }
 
 solveRect(2, 4);

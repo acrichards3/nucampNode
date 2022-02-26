@@ -1,4 +1,4 @@
-const rect = (x, y, callback) => {
+module.exports = (x, y, callback) => {
   if (x <= 0 || y <= 0) {
     callback(
       new Error(
@@ -16,5 +16,3 @@ const rect = (x, y, callback) => {
     );
   }
 };
-
-export default rect;
